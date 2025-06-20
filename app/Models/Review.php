@@ -10,7 +10,7 @@ class Review extends Model
     use HasFactory;
 
     protected $table = 'review';
-    protected $fillable = ['id_kost', 'id_pengguna', 'rating', 'komentar', 'created_at'];
+    protected $fillable = ['id_kost', 'id_user','komentar', 'created_at'];
 
     /**
      * Mendapatkan kost terkait.
@@ -21,10 +21,10 @@ class Review extends Model
     }
 
     /**
-     * Mendapatkan pengguna terkait yang memberikan review.
+     * Mendapatkan user terkait yang memberikan review.
      */
-    public function pengguna()
+    public function user()
     {
-        return $this->belongsTo(Pengguna::class, 'id_pengguna');
+        return $this->belongsTo(User::class, 'id_user');
     }
 }

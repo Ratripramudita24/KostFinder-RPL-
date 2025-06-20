@@ -11,7 +11,7 @@ class KostFinderSeeder extends Seeder
     public function run(): void
     {
         // Pengguna
-        DB::table('pengguna')->insert([
+        DB::table('users')->insert([
             [
                 'nama' => 'Admin Satu',
                 'email' => 'admin@kostfinder.com',

@@ -13,7 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(KostFinderSeeder::class);
+        $this->call(admin::class);
+        $this->call(Kost::class);
 
         // User::factory()->create([
         //     'name' => 'Test User',

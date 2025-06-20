@@ -45,15 +45,15 @@
 
 #### 🔒 Ringkasan Hak Akses
 
-| Fitur                                      | Admin   | Pemilik Kost   | Pencari Kost      |
-|--------------------------------------------|---------|----------------|-------------------|
-| Login & Register                           | ✅      | ✅            | ✅                |
-| Lihat daftar kost                          | ✅      | ✅            | ✅                |
-| Tambah / Edit / Hapus kost                 | ❌      | ✅            | ❌                |
-| Lihat & Kelola review                      | ✅      | ✅ (lihat)    | ✅ (beri ulasan)  |
-| Kelola data pengguna                       | ✅      | ❌            | ❌                |
-| Tambah fasilitas & alamat kost             | ❌      | ✅            | ❌                |
-| Hubungi pemilik melalui nomor telepon      | ❌      | ❌            | ✅                |
+| Fitur                                      | Admin       | Pemilik Kost   | Pencari Kost      |
+|--------------------------------------------|-------------|----------------|-------------------|
+| Login & Register                           | ✅          | ✅            | ✅                |
+| Lihat daftar kost                          | ✅          | ✅            | ✅                |
+| Tambah / Edit / Hapus kost                 | ❌          | ✅            | ❌                |
+| Lihat & Kelola review                      | ✅ (lihat)  | ✅ (lihat)    | ✅ (beri ulasan)  |
+| Kelola data pengguna                       | ✅          | ❌            | ❌                |
+| Tambah fasilitas & alamat kost             | ❌          | ✅            | ❌                |
+| Hubungi pemilik melalui nomor telepon      | ❌          | ❌            | ✅                |
 
 
 ---
@@ -147,7 +147,7 @@
    - `kost.id → kost_fasilitas.id_kost`
    - `fasilitas.id → kost_fasilitas.id_fasilitas`
 
-3. **kost ↔ alamat**
+3. **Kost ↔ Alamat**
    - One-to-One: satu kost hanya memiliki satu alamat.
    - `kost.id → alamat.id_kost`
 
